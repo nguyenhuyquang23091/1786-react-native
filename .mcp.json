@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "Figma-0h787z": {
+      "command": "npx",
+      "args": [
+        "@composio/mcp@latest",
+        "start",
+        "--url",
+        "https://mcp.composio.dev/composio/server/8424db08-b07a-4b1f-a295-6ffcdffece50/mcp?include_composio_helper_actions=true"
+      ],
+      "env": {
+        "npm_config_yes": "true"
+      }
+    }
+  }
+}

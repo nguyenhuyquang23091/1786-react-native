@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rmdir:*)",
+      "Bash(npx expo install:*)",
+      "Bash(rm:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(find:*)",
+      "Bash(mv:*)",
+      "WebFetch(domain:www.figma.com)",
+      "Bash(del \"app\\(tabs)\\yogaClasses.tsx\")",
+      "Bash(npm uninstall:*)",
+      "Bash(npm install:*)"
+    ],
+    "deny": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "Figma-0h787z"
+  ],
+  "disabledMcpjsonServers": [
+    "Figma-0h787z"
+  ]
+}

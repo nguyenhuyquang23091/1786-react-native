@@ -32,8 +32,16 @@ yarn-error.*
 
 # local env files
 .env*.local
+.env
 
 # typescript
 *.tsbuildinfo
+
+# Google Services (contains sensitive data)
+google-services.json
+GoogleService-Info.plist
+
+# @generated expo modules
+expo-modules-autolinking/
 
 app-example
