@@ -24,7 +24,7 @@ export default function HomeScreen() {
     setIsAnimating(true);
 
     setTimeout(() => {
-      router.push('./googleLogin');
+      router.push('./signUp');
       setIsAnimating(false);
     },800 );
   }
