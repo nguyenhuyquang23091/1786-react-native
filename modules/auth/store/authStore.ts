@@ -1,6 +1,6 @@
 import { create } from 'zustand';
-import { UserService } from '../services/userService';
 import { CurrentUser, UserCredentials } from '../interface/UserInterface';
+import { UserService } from '../services/userService';
 
 interface AuthState {
   user: CurrentUser | null;

@@ -30,7 +30,7 @@ export default function AnimatedSignInScreen() {
     try {
       await signIn({ email, password });
       Alert.alert('Success', 'Signed in successfully!', [
-        { text: 'OK', onPress: () => router.push('/yogaCourse') }
+        { text: 'OK', onPress: () => router.push('/(tabs)/yogaCourse') }
       ]);
     } catch (error: any) {
       const errorMessage = getErrorMessage(error.code, error.message || 'Failed to sign in');

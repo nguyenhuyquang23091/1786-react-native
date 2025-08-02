@@ -10,8 +10,8 @@ import { Input } from '@/components/ui/input';
 import { SafeAreaView } from '@/components/ui/safe-area-view';
 import { Text } from '@/components/ui/text';
 import { View } from '@/components/ui/view';
-import { useCartStore } from '@/modules/yoga/store/cart-store';
 import { yogaService } from '@/modules/yoga/services/yoga-service';
+import { useCartStore } from '@/modules/yoga/store/cart-store';
 
 function CartScreen() {
   const {
@@ -207,7 +207,7 @@ function CartScreen() {
         Browse our yoga classes and add them to your cart to get started.
       </Text>
       <Button onPress={() => router.push('/(tabs)/yogaCourse')}>
-        <Text className="text-white font-medium">Browse Classes</Text>
+        <Text className="text-black font-medium">Browse Classes</Text>
       </Button>
     </MotiView>
   );

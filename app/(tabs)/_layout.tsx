@@ -48,6 +48,14 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="book.closed" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="conversation"
+        options={{
+          title: 'Conversations',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="message" color={color} />,
+        }}
+      />
     </Tabs>
+    
   );
 }

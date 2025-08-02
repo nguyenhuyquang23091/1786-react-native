@@ -1,5 +1,5 @@
 import { router } from 'expo-router';
-import { Plus, ShoppingCart, Star, Clock, Calendar, User, DollarSign, Activity, FileText, ShoppingBasket } from 'lucide-react-native';
+import { Activity, Calendar, Clock, DollarSign, FileText, ShoppingBasket, ShoppingCart, Star, User } from 'lucide-react-native';
 import { MotiView } from 'moti';
 import { Skeleton } from 'moti/skeleton';
 import React, { useEffect, useState } from 'react';

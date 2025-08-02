@@ -26,6 +26,7 @@ export default function RootLayout() {
          <Stack.Screen name="yogaClasses" options={{ headerShown: false }} />
             <Stack.Screen name="signUp" options={{ headerShown: false }} />
              <Stack.Screen name="signIn" options={{ headerShown: false }} />
+             <Stack.Screen name="chat" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />

@@ -1,12 +1,23 @@
 
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../../service/firebaseConfig';
+import { doc, setDoc } from 'firebase/firestore';
+import { auth, db } from '../../../service/firebaseConfig';
 import { CurrentUser, UserCredentials } from '../interface/UserInterface';
+
+
+
 
 export class UserService {
     async signUp(user: UserCredentials): Promise<void> {
         try { 
-            await createUserWithEmailAndPassword(auth, user.email, user.password);
+    
+           const userCredentials =  await createUserWithEmailAndPassword(auth, user.email, user.password);
+            await setDoc(doc(db, 'users', userCredentials.user.uid), {
+                uid : userCredentials.user.uid,
+                email: userCredentials.user.email,
+                role: 'customer'
+               
+            });
         }  catch ( error){
             console.error("Error during sign up:", error);
             throw error; 
